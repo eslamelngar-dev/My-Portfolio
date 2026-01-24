@@ -19,7 +19,7 @@ export default function NavBar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 ${
-        scrolled ? "bg-black/80 backdrop-blur-md shadow-lg" : "bg-transparent"
+        scrolled ? "bg-black/30 backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,5 +1,6 @@
 import { Inter, Homemade_Apple } from "next/font/google";
 import "./globals.css";
+import NavBar from "@/components/Layouts/NavBar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.variable} ${homemadeApple.variable}`}>
+        <NavBar />
         {children}
       </body>
     </html>

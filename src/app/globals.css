@@ -29,6 +29,11 @@ body {
   color: var(--niceColor);
   font-weight: 600;
   text-shadow: 0 0 25px var(--niceColor);
+  transition: all 0.3s ease;
+}
+.my-name:hover {
+  transform: scale(1.1) !important;
+  text-shadow: 0 0 40px var(--niceColor);
 }
 .nav-link {
   transition: all 0.3s ease;
@@ -44,7 +49,7 @@ body {
   left: 0;
   bottom: 0;
   background-color: var(--niceColor);
-  transition: width 0.3s;
+  transition: width 0.5s;
 }
 
 .nav-link:hover::after {
@@ -61,4 +66,46 @@ body {
 }
 .overlay {
   background-color: rgba(21, 88, 98, 0.868);
+}
+
+.work-btn {
+  transition: all 0.4s ease !important;
+}
+.work-btn:hover {
+  transform: translateY(-15%) !important;
+  box-shadow: 0 0 25px var(--niceColor) !important;
+}
+.getin-btn {
+  transition: all 0.4s ease !important;
+}
+.getin-btn:hover {
+  transform: translateY(-15%) !important;
+  box-shadow: 0 0 25px var(--niceColor) !important;
+}
+
+.icon-btn {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 50px 15px 15px 15px !important;
+  transition: all 0.4s ease !important;
+  background-color: rgba(11, 44, 49, 0.486) !important;
+}
+.icon-btn:hover {
+  transform: scale(1.1);
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+.icon-btn:hover {
+  box-shadow: 0 0 25px var(--niceColor);
+}
+.icon-btn:hover .btn-icon {
+  animation: float 1s ease-in-out infinite;
+  transform: translateY(-7px);
 }

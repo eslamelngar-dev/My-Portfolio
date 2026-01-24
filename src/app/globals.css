@@ -1,26 +1,64 @@
-@import "tailwindcss";
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-homemade: "Homemade Apple", cursive;
+  --font-inter: "Inter", sans-serif;
+  --niceColor: #38dbf4;
 }
+@import "tailwindcss";
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter) !important;
+}
+.inter {
+  font-family: var(--font-inter) !important;
+}
+.nice {
+  color: var(--niceColor) !important;
+}
+.nav-bar {
+  width: 100vw;
+}
+.navBar {
+  background-color: var(--background);
+}
+.my-name {
+  color: var(--niceColor);
+  font-weight: 600;
+  text-shadow: 0 0 25px var(--niceColor);
+}
+.nav-link {
+  transition: all 0.3s ease;
+  position: relative;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: var(--niceColor);
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: var(--niceColor) !important;
+}
+.hero {
+  background-image: url(/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overlay {
+  background-color: rgba(21, 88, 98, 0.868);
 }

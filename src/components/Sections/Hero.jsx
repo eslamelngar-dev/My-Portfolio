@@ -12,13 +12,13 @@ export default function Hero() {
     <>
       <section
         id="home"
-        className="relative min-h-dvh pt-20 overflow-hidden bg-[url('/background.jpg')] bg-cover bg-center"
+        className="relative h-screen overflow-hidden bg-[url('/background.jpg')] bg-cover bg-center"
       >
         <TheParticles />
         {/* Overlay */}
         <div className="overlay absolute inset-0 z-[0] pointer-events-none"></div>
 
-        <div className="relative z-10 flex flex-col items-center justify-start min-h-[100vh] px-4">
+        <div className="relative z-10 flex flex-col items-center justify-center min-h-[100vh] px-4">
           <div className="hero-content mt-15">
             <Typography
               variant="h1"
@@ -54,7 +54,7 @@ export default function Hero() {
               gutterBottom
               sx={{
                 fontFamily: "var(--font-inter)",
-                color: "white",
+                color: "#eee",
                 textAlign: "center",
                 lineHeight: 1.6,
                 maxWidth: { xs: "90%", sm: "80%", md: "52rem" },

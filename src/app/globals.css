@@ -5,7 +5,7 @@
 :root {
   --font-homemade: "Homemade Apple", cursive;
   --font-inter: "Inter", sans-serif;
-  --niceColor: #38dbf4;
+  --niceColor: #0cd8f7;
 }
 @import "tailwindcss";
 
@@ -108,4 +108,10 @@ body {
 .icon-btn:hover .btn-icon {
   animation: float 1s ease-in-out infinite;
   transform: translateY(-7px);
+}
+.skill-card:hover {
+  transition: all 0.4s ease;
+}
+.skill-card:hover {
+  box-shadow: 0 0 20px 1px var(--niceColor) !important;
 }

@@ -7,7 +7,8 @@ import EmailIcon from '@mui/icons-material/Email';
 import ContactCard from "../UI/ContactCard";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import TelegramIcon from '@mui/icons-material/Telegram';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import CVCard from "../UI/CVCard";
+import ArticleIcon from '@mui/icons-material/Article';
 
 export default function Contact() {
   return (
@@ -111,7 +112,7 @@ export default function Contact() {
               display="flex"
               justifyContent="center"
             >
-              <ContactCard Title="Available Anytime" icon={AccessTimeIcon}/>
+              <CVCard Title="My CV" icon={ArticleIcon}/>
             </Grid>
         </Grid>
       </Container>

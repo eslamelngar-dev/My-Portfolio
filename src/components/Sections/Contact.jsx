@@ -11,7 +11,7 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
 export default function Contact() {
   return (
-    <section id="About" className="relative min-h-screen py-20 bg-[#222222] flex justify-center align-center flex-col">
+    <section id="Contact" className="relative min-h-screen py-20 bg-[#222222] flex justify-center align-center flex-col">
       <div className="text-center mb-10 px-4">
         <Typography
           variant="h1"

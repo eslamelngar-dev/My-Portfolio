@@ -6,19 +6,18 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
 import IconButton from "@mui/material/IconButton";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import Container from "@mui/material/Container";
+import ArrowUpwardRoundedIcon from "@mui/icons-material/ArrowUpwardRounded";
 
 export default function Footer() {
   return (
     <Box
-    id="Contact"
+      id="Contact"
       component="footer"
       sx={{
-        backgroundColor: "#2b2b2b",
+        backgroundColor: "#1c2e40",
         color: "#ccc",
         pt: 6,
         pb: 6,
@@ -39,8 +38,8 @@ export default function Footer() {
           }}
         >
           <Box sx={{ mb: { xs: 2, md: 0 } }}>
-            <Typography variant="h6" sx={{ mb: 1, color: "#fff" }}>
-              Contact Us
+            <Typography variant="h6" sx={{ mb: 1, color: "var(--niceColor)" }}>
+              Eslam Elngar
             </Typography>
             <Typography variant="body2">Phone: 01552762205</Typography>
             <Typography variant="body2">
@@ -49,24 +48,27 @@ export default function Footer() {
           </Box>
 
           <Box>
-            <Link href="/login">
+            <Link href="#Home">
               <Button
+                startIcon={<ArrowUpwardRoundedIcon />}
                 variant="contained"
                 sx={{
-                  backgroundColor: "red",
+                  backgroundColor: "rgb(10, 20, 31)",
                   color: "white",
-                  "&:hover": { backgroundColor: "#cc0000" },
+                  "&:hover": { backgroundColor: "rgb(25, 55, 86)" },
                   fontWeight: "bold",
                   borderRadius: "10px",
                 }}
               >
-                Subscribe Now
+                Back To Top
               </Button>
             </Link>
           </Box>
         </Box>
 
-        <hr style={{ borderColor: "#444", marginBottom: "24px" }} />
+        <hr
+          style={{ borderColor: "rgb(125, 138, 144)", marginBottom: "24px" }}
+        />
 
         <Box
           sx={{
@@ -78,38 +80,59 @@ export default function Footer() {
           }}
         >
           <Box sx={{ display: "flex", gap: 3, mb: { xs: 2, md: 0 } }}>
-            <Link href="#home" underline="hover" sx={{ color: "#ccc" }}>
+            <Link
+              href="#Home"
+              sx={{ 
+                color: "#ccc",textDecoration:"none",
+                "&:hover": { color: "var(--niceColor)" },
+              }}
+            >
               Home
             </Link>
-            <Link href="#services" underline="hover" sx={{ color: "#ccc" }}>
-              Services
+            <Link href="#About" sx={{ 
+                color: "#ccc",textDecoration:"none",
+                "&:hover": { color: "var(--niceColor)" },
+              }}>
+              About
             </Link>
-            <Link href="#food" underline="hover" sx={{ color: "#ccc" }}>
-              Food
+            <Link href="#Portfolio" sx={{ 
+                color: "#ccc",textDecoration:"none",
+                "&:hover": { color: "var(--niceColor)" },
+              }}>
+              Portfolio
             </Link>
-            <Link href="#contact" underline="hover" sx={{ color: "#ccc" }}>
+            <Link href="#Contact" sx={{ 
+                color: "#ccc",textDecoration:"none",
+                "&:hover": { color: "var(--niceColor)" },
+              }}>
               Contact
             </Link>
           </Box>
 
           <Box>
-            <IconButton href="#" sx={{ color: "#ccc" }}>
-              <FacebookIcon />
-            </IconButton>
-            <IconButton href="#" sx={{ color: "#ccc" }}>
-              <TwitterIcon />
-            </IconButton>
-            <IconButton href="https://github.com/eslamelngar-dev" sx={{ color: "#ccc" }}>
+            <IconButton
+              href="https://github.com/eslamelngar-dev"
+              sx={{ 
+                color: "#ccc",textDecoration:"none",
+                "&:hover": { color: "var(--niceColor)" },
+              }}
+            >
               <GitHubIcon />
             </IconButton>
-            <IconButton href="https://www.linkedin.com/in/eslam-elngar-033611373/" sx={{ color: "#ccc" }}>
+            <IconButton
+              href="https://www.linkedin.com/in/eslam-elngar-033611373/"
+              sx={{ 
+                color: "#ccc",textDecoration:"none",
+                "&:hover": { color: "var(--niceColor)" },
+              }}
+            >
               <LinkedInIcon />
             </IconButton>
           </Box>
         </Box>
 
         <Typography variant="body2" textAlign="center" sx={{ color: "#888" }}>
-          &copy; {new Date().getFullYear()} YourCompany. All rights reserved.
+          &copy; {new Date().getFullYear()} Eslam Elngar. All rights reserved.
         </Typography>
       </Container>
     </Box>

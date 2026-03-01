@@ -19,41 +19,73 @@ export default function ProjectCard({
   Code,
 }) {
   return (
-    <Card className="project-card" sx={{ maxWidth: 345, background: "#111f2c", borderRadius: 4 }}>
-      <CardMedia className="project-img" component="img" alt={Title} height="140" image={Img} />
-      <CardContent sx={{ p: 3 }}>
+    <Card
+      className="project-card"
+      sx={{
+        maxWidth: 345,
+        background: "#111f2c",
+        borderRadius: 4,
+        minHeight: "32.8rem",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+      }}
+    >
+      <CardMedia
+        className="project-img"
+        component="img"
+        alt={Title}
+        height="160"
+        image={Img}
+      />
+
+      <CardContent
+        sx={{
+          p: 3,
+          display: "flex",
+          flexDirection: "column",
+          gap: 2,
+          flexGrow: 1,
+        }}
+      >
         <div
-          style={{ display: "flex", alignItems: "center", justifyContent:"space-between", flexDirection: "row" }}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
         >
           <Typography
-          className="project-title"
+            className="project-title"
             gutterBottom
             variant="h5"
             component="div"
-            sx={{ color: "white" }}
+            sx={{ color: "white", mb: 0 }}
           >
             {Title}
           </Typography>
           <Chip label={Category} sx={{ color: "white" }} />
         </div>
-        <div>
-          <Typography variant="body2" sx={{ color: "grey" }}>
-            {Subtitle}
-          </Typography>
-          <Typography variant="body2" sx={{ color: "white", my: 1.5 }}>
-            {Description}
-          </Typography>
-        </div>
-        <div>
+
+        <Typography variant="body2" sx={{ color: "grey" }}>
+          {Subtitle}
+        </Typography>
+
+        <Typography variant="body2" sx={{ color: "white", flexGrow: 1 }}>
+          {Description}
+        </Typography>
+
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
           {Techs.map((tech, index) => (
             <Chip key={index} label={tech} sx={{ color: "var(--niceColor)" }} />
           ))}
         </div>
-        <CardActions>
+
+        <CardActions sx={{ p: 0 }}>
           <Button
-          href={Visit}
-          target="_blank"
-          className="project-btn"
+            href={Visit}
+            target="_blank"
+            className="project-btn"
             size="medium"
             sx={{
               background: "#1c2e40",
@@ -66,9 +98,9 @@ export default function ProjectCard({
             Visit
           </Button>
           <Button
-          href={Code}
-          target="_blank"
-          className="project-btn"
+            href={Code}
+            target="_blank"
+            className="project-btn"
             size="medium"
             sx={{
               background: "#1c2e40",

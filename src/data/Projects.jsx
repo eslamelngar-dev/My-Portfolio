@@ -47,4 +47,17 @@ export const Projects = [
     Visit: "https://fitness-zone-workouts-for-everyone.vercel.app/",
     Code: "https://github.com/eslamelngar-dev/Fitness-Zone---Workouts-for-everyone",
   },
+{
+    Id: 4,
+    Title: "Sana3y",
+    SubTitle:
+      "Simple idea to help who need someone has a specific experience like carpenter, blacksmith, painter and more.",
+    Description:
+      "Included multiple pages,Very useful idea exactly like a freelacers system ",
+    Category: "Web App",
+    Techs: ["Next js", "Tailwind"],
+    Img: "/Projects-img/Sana3y.jpg",
+    Visit: "https://sana3y-crafts-men-platform.vercel.app/",
+    Code: "https://github.com/eslamelngar-dev/Sana3y-CraftsMen_Platform",
+  },
 ];

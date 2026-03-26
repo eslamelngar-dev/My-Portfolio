@@ -68,8 +68,8 @@ export default function Portfolio() {
               Img={project.Img}
               Category={project.Category}
               Techs={project.Techs}
-              Visit={project.Visit}
-              Code={project.Code}
+              Visit={project?.Visit}
+              Code={project?.Code}
               />
             </Grid>
           ))}

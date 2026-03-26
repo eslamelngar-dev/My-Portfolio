@@ -1,6 +1,6 @@
 export const Projects = [
   {
-    Id: 1,
+    Id: 0,
     Title: "Shogol",
     SubTitle: "A Front-End freelance platform built with Next.js, TypeScript",
     Description:
@@ -11,6 +11,17 @@ export const Projects = [
     Visit: "https://shogol-freelancers-platform.vercel.app/",
     Code: "https://github.com/eslamelngar-dev/Shogol-Freelancers-Platform",
   },
+{
+    Id: 1,
+    Title: "AskAway",
+    SubTitle: "A Front-End AI ChatBot Interface built with Next.js, TypeScript",
+    Description:
+      "An AI-powered chat interface featuring real-time streaming responses, conversation management with search and rename, dark/light mode, markdown rendering with syntax-highlighted code blocks, and a fully responsive design.",
+    Category: "Web App",
+    Techs: ["Next js", "Tailwind", "typeScript"],
+    Img: "/Projects-img/askaway.png",
+    Visit: "https://ask-away-ai-chat-bot-interface.vercel.app/",
+},
   {
     Id: 2,
     Title: "Soum Teck",

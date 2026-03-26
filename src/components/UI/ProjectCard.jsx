@@ -82,36 +82,41 @@ export default function ProjectCard({
         </div>
 
         <CardActions sx={{ p: 0 }}>
-          <Button
-            href={Visit}
-            target="_blank"
-            className="project-btn"
-            size="medium"
-            sx={{
-              background: "#1c2e40",
-              color: "white",
-              pr: 2,
-              borderRadius: 3,
-            }}
-          >
-            <OpenInNewIcon sx={{ mx: 1 }} />
-            Visit
-          </Button>
-          <Button
-            href={Code}
-            target="_blank"
-            className="project-btn"
-            size="medium"
-            sx={{
-              background: "#1c2e40",
-              color: "white",
-              pr: 2,
-              borderRadius: 3,
-            }}
-          >
-            <CodeIcon sx={{ mx: 1 }} />
-            Code
-          </Button>
+          {Visit && (
+            <Button
+              href={Visit}
+              target="_blank"
+              className="project-btn"
+              size="medium"
+              sx={{
+                background: "#1c2e40",
+                color: "white",
+                pr: 2,
+                borderRadius: 3,
+              }}
+            >
+              <OpenInNewIcon sx={{ mx: 1 }} />
+              Visit
+            </Button>
+          )}
+
+          {Code && (
+            <Button
+              href={Code}
+              target="_blank"
+              className="project-btn"
+              size="medium"
+              sx={{
+                background: "#1c2e40",
+                color: "white",
+                pr: 2,
+                borderRadius: 3,
+              }}
+            >
+              <CodeIcon sx={{ mx: 1 }} />
+              Code
+            </Button>
+          )}
         </CardActions>
       </CardContent>
     </Card>

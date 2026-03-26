@@ -4,7 +4,7 @@ export const Projects = [
     Title: "Reelax",
     SubTitle: "A movie discovery platform with ratings, trailers, and search — built with Next.js, TypeScript, and TMDb API",
     Description:
-      "Reelax is a modern Arabic movie platform where users can discover trending, popular, and top-rated films, watch trailers, browse by categories, rate movies with an interactive star system, and save favorites locally. Features include a cinematic hero slider, cast details, reviews, full search functionality, and a fully responsive dark-themed design. Powered by the TMDb API.",
+      "Reelax is a modern Arabic movie platform, discover trending films, watch trailers. Features include a cinematic hero slider, cast details, reviews",
     Category: "Web App",
     Techs: ["Next js", "Tailwind", "typeScript"],
     Img: "/Projects-img/Reelax.png",
